@@ -14,3 +14,7 @@ footer a{margin-right:1em}
 .watch:hover,.watch:focus-visible{filter:brightness(1.08)}
 .watch svg{width:28px;height:28px;flex:none}
 .watch small{font-weight:400;opacity:.85}
+.cast{list-style:none;padding:0;margin:0;display:grid;gap:1em}
+.cast li{display:flex;gap:.9em;align-items:center}
+.badge{flex:none;width:48px;height:48px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--accent);color:var(--on-accent);font-weight:700;font-size:1.2rem}
+.badge svg{width:28px;height:28px}
