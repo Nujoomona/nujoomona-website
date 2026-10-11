@@ -7,3 +7,10 @@ h1{font-size:2rem;margin:0 0 .25em}h2{font-size:1.2rem;margin-top:2em}
 .muted{color:var(--muted)}a{color:var(--accent)}
 footer{margin-top:3em;padding-top:1em;border-top:1px solid var(--muted);font-size:.9rem;color:var(--muted)}
 footer a{margin-right:1em}
+.social{display:flex;flex-wrap:wrap;gap:.75em 1.25em;align-items:center;margin:0 0 .75em}
+.social a{display:inline-flex;align-items:center;gap:.5em;color:var(--muted);text-decoration:none;margin:0}
+.social a:hover,.social a:focus-visible{color:var(--accent)}
+.social svg{flex:none}
+.social-big{flex-direction:column;align-items:flex-start;margin:0}
+.social-big a{color:var(--fg)}
+.social-big svg{width:28px;height:28px}
