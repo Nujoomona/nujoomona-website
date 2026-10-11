@@ -6,14 +6,12 @@ Static site for [nujoomona.com](https://nujoomona.com): home page, privacy polic
 
 - `public/` is the site root (plain HTML + CSS, no build step).
 
-## Deploy (Cloudflare Pages)
+## Deploy (Cloudflare Workers static assets)
 
-Manual upload: Workers & Pages → Create → Pages → Upload assets, then upload the `public/` folder.
+The repo is connected to Cloudflare Workers Builds: every push to `main` runs `npx wrangler deploy`, which serves `public/` as static assets using `wrangler.jsonc` (unknown paths get `public/404.html`).
 
-Or with Wrangler:
+To deploy by hand:
 
 ```sh
-npx wrangler pages deploy public --project-name nujoomona
+npx wrangler deploy
 ```
-
-Once the repo is on GitHub, connect it in Cloudflare Pages (build command: none, output directory: `public`) so every push to `main` deploys.
